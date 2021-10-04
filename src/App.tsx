@@ -1,12 +1,15 @@
+import { Box, Container } from '@material-ui/core';
 import React from 'react';
 import './App.css';
-import SimplePopover from './Pages/SimplePopover';
+import SimplePopover from './components/SimplePopover';
 
 function App() {
   return (
-    <div className="App">
-      <SimplePopover/>
-    </div>
+      <Container>
+        <Box pt={5} display="flex" justifyContent="center">
+         <SimplePopover/>
+        </Box>
+      </Container>
   );
 }
 
